@@ -165,7 +165,7 @@ RegisterNetEvent('mt-pilotjob:client:AbrirLoja', function()
     }
     for k, v in pairs(Config.ShopItems) do
         local item = {}
-        item.header = "<img src=nui://qb-inventory/html/images/" .. QBCore.Shared.Items[v.itemName].image .. " width=35px style='margin-right: 10px'> " .. QBCore.Shared.Items[v.itemName].label
+        item.header = "<img src=nui://aj-inventory/html/images/" .. QBCore.Shared.Items[v.itemName].image .. " width=35px style='margin-right: 10px'> " .. QBCore.Shared.Items[v.itemName].label
         item.text = Lang.Price .. v.itemPrice .. '$'
         item.params = {
             event = 'mt-pilotjob:client:ComprarItemLoja',
